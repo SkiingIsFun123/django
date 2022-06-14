@@ -75,8 +75,8 @@ example::
     <tr><th><label for="id_form-2-title">Title:</label></th><td><input type="text" name="form-2-title" id="id_form-2-title"></td></tr>
     <tr><th><label for="id_form-2-pub_date">Pub date:</label></th><td><input type="text" name="form-2-pub_date" id="id_form-2-pub_date"></td></tr>
 
-There are now a total of three forms showing above. One for the initial data
-that was passed in and two extra forms. Also note that we are passing in a
+There are now a total of three forms shown above. One for the initial data
+that was passed in and two extra forms. Also, note that we are passing in a
 list of dictionaries as the initial data.
 
 If you use an ``initial`` for displaying a formset, you should pass the same
@@ -119,7 +119,7 @@ and the formset is initialized with two initial items, two forms with the
 initial data will be displayed.
 
 A ``max_num`` value of ``None`` (the default) puts a high limit on the number
-of forms displayed (1000). In practice this is equivalent to no limit.
+of forms displayed (1000). In practice, this is equivalent to no limit.
 
 By default, ``max_num`` only affects how many forms are displayed and does not
 affect validation.  If ``validate_max=True`` is passed to the
@@ -382,7 +382,7 @@ Validating the number of forms in a formset
 ===========================================
 
 Django provides a couple ways to validate the minimum or maximum number of
-submitted forms. Applications which need more customizable validation of the
+submitted forms. Applications that need more customizable validation of the
 number of forms should use custom formset validation.
 
 .. _validate_max:
@@ -811,7 +811,7 @@ Formsets have the following attributes and methods associated with rendering:
 
     .. versionadded:: 4.1
 
-    The name of the template used when calling :meth:`.as_div`. By default this
+    The name of the template used when calling :meth:`.as_div`. By default, this
     is ``"django/forms/formsets/div.html"``. This template renders the
     formset's management form and then each form in the formset as per the
     form's :meth:`~django.forms.Form.as_div` method.
@@ -825,14 +825,14 @@ Formsets have the following attributes and methods associated with rendering:
 
 .. attribute:: BaseFormSet.template_name_table
 
-    The name of the template used when calling :meth:`.as_table`. By default
+    The name of the template used when calling :meth:`.as_table`. By default,
     this is ``"django/forms/formsets/table.html"``. This template renders the
     formset's management form and then each form in the formset as per the
     form's :meth:`~django.forms.Form.as_table` method.
 
 .. attribute:: BaseFormSet.template_name_ul
 
-    The name of the template used when calling :meth:`.as_ul`. By default this
+    The name of the template used when calling :meth:`.as_ul`. By default, this
     is ``"django/forms/formsets/ul.html"``. This template renders the formset's
     management form and then each form in the formset as per the form's
     :meth:`~django.forms.Form.as_ul` method.
@@ -899,7 +899,7 @@ The ``manage_articles.html`` template might look like this:
         </table>
     </form>
 
-However there's a slight shortcut for the above by letting the formset itself
+However, there's a slight shortcut for the above by letting the formset itself
 deal with the management form:
 
 .. code-block:: html+django
@@ -950,8 +950,8 @@ possible to render it with ``{{ form.ORDER }}``.
 Using more than one formset in a view
 -------------------------------------
 
-You are able to use more than one formset in a view if you like. Formsets
-borrow much of its behavior from forms. With that said you are able to use
+You can use more than one formset in a view if you like. Formsets
+borrow much of its behavior from forms. With that said you can use
 ``prefix`` to prefix formset form field names with a given value to allow
 more than one formset to be sent to a view without name clashing. Let's take
 a look at how this might be accomplished::
